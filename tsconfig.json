@@ -29,7 +29,6 @@
     "isolatedModules": true, // 生成与 '.d.ts' 文件一起生成的映射文件。
     "disableSizeLimit": false, // 允许导入 '.json' 文件。
     "skipLibCheck": true,
-    "types": ["vite/client"],
     "paths": {
       "@/*": ["src/*"],
       "vite-plugin-mock/*": ["node_modules/vite-plugin-mock/dist/*"]

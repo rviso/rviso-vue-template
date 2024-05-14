@@ -49,11 +49,11 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
     "@rviso/eslint-config-standard": "^0.1.0",
     "@rviso/eslint-config-typescript": "^0.1.0",
     "@rviso/eslint-config-vue": "^0.1.0",
-    "@commitlint/cli": "^17.8.1",
-    "@commitlint/config-conventional": "^17.8.1",
     "@types/mockjs": "^1.0.10",
     "@types/node": "^18.19.33",
     "@types/three": "^0.164.0",
