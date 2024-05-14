@@ -3,7 +3,7 @@
   <div class="flex items-center justify-center h-screen w-screen bg-gray-100">
     <div class="bg-white p-8 rounded-lg shadow-lg">
       <h1 class="text-4xl font-bold text-gray-800">
-        Welcome to Blanc Nova Vue 3 Template
+        Welcome to RViso Vue 3 Template
       </h1>
       <p class="text-gray-600">
         {{ msg }}
@@ -21,7 +21,7 @@ const msg: Ref<string> = ref(
 )
 
 onMounted(() => {
-  console.log('[Blanc Nova] Welcome to Blanc Nova Vue 3 Template')
+  console.log('[RViso] Welcome to RViso Vue 3 Template')
 })
 </script>
 

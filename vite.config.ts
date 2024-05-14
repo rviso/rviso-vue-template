@@ -26,9 +26,9 @@ export default defineConfig((_opt: UserConfig) => {
         entry: 'src/main.ts',
         inject: {
           data: {
-            title: 'Blanc Nova Vue3 Template',
-            description: 'Blanc Nova Vue3 Template', // 网页描述
-            keywords: 'Blanc Nova Vue3 Template' // 网页关键字
+            title: 'RViso Vue3 Template',
+            description: 'RViso Vue3 Template', // 网页描述
+            keywords: 'RViso Vue3 Template' // 网页关键字
           }
         }
       }),

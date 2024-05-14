@@ -1,17 +1,17 @@
 {
-  "name": "blanc-nova-vue3-template",
+  "name": "rvisovue3-template",
   "type": "module",
   "version": "0.0.1",
-  "description": "A Vue 3 template for Blanc Nova",
+  "description": "A Vue 3 template for RViso",
   "author": "lingann",
   "license": "ISC",
-  "homepage": "https://github.com/Lingann/blanc-nova-vue3-template",
+  "homepage": "https://github.com/rviso/rviso-vue-template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lingann/blanc-nova-vue3-template.git"
+    "url": "git+https://github.com/rviso/rviso-vue-template.git"
   },
   "bugs": {
-    "url": "https://github.com/Lingann/blanc-nova-vue3-template/issues"
+    "url": "https://github.com/rviso/rviso-vue-template/issues"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
