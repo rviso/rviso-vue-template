@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // 指定编译器选项的基本目录。
+    "target": "esnext", // 发出符合ECMAScript标准的类字段。
+    "jsx": "preserve", // 指定ECMAScript目标版本：'ES3'，'ES5'，'ES2015'，'ES2016'，'ES2017'，'ES2018'，'ES2019'，'ES2020'，'ES2021'，'ESNEXT'。
+    "lib": ["ES2015", "dom"], // 启用对 ES6 模块的 interoperability 的支持，并且为那些没有设置默认导出的模块启用默认导入。
+    "useDefineForClassFields": true,
+    "module": "esnext", // 指定生成哪个模块系统代码：'none'，'commonjs'，'amd'，'system'，'umd'，'es2015'，'es2020'，'esnext'。
+    "moduleResolution": "node", // 指定要包含在编译中的库文件。
+    "resolveJsonModule": true, // 报告错误或警告，当标签未使用时。
+    "allowJs": true, // 生成相应的 '.map' 文件。
+    "strict": true, // 跳过对声明文件的检查。
+    "strictFunctionTypes": true, // 允许从没有设置默认导出的模块中默认导入。
+    "allowUnreachableCode": false, // 报告错误或警告，当在函数外部或之后的代码块中存在不可访问的代码。
+    "allowUnusedLabels": false, // 不生成输出文件。
+    "noImplicitAny": true, // 在表达式和声明上有隐含的 any类型时报错。
+    "noImplicitReturns": true, // 报告错误或警告，当函数存在路径不返回值的情况。
+    "noImplicitThis": true, // 报告错误或警告，当 this表达式的类型为 any时。
+    "noUnusedLocals": true, // 报告错误或警告，当局部声明未使用时。
+    "noUnusedParameters": true, // 将每个文件作为单独的模块（与“合并”模块一起使用）。
+    "declaration": true, // 生成相应的 '.d.ts' 文件。
+    "declarationMap": true, // 指定模块解析策略：'node'，'classic'。
+    "noEmit": true, // 报告错误或警告，当函数参数未使用时。
+    "preserveConstEnums": true, // 保留const枚举的声明。
+    "removeComments": true, // 启用严格的检查函数类型。
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true, // 禁用输出文件大小限制。
+    "esModuleInterop": true, // 允许编译javascript文件。
+    "isolatedModules": true, // 生成与 '.d.ts' 文件一起生成的映射文件。
+    "disableSizeLimit": false, // 允许导入 '.json' 文件。
+    "skipLibCheck": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@/*": ["src/*"],
+      "vite-plugin-mock/*": ["node_modules/vite-plugin-mock/dist/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.json",
+    "src/**/*.d.ts",
+    "**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "lib", "es", "esm"]
+}

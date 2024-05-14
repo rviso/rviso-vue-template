@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+    "stylelint-config-standard-scss",
+    "stylelint-config-standard-vue/scss"
+  ],
+  "plugins": ["stylelint-prettier", "stylelint-order"],
+  "customSyntax": "postcss-html",
+  "ignoreFiles": ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts", "**/*.json"],
+  "overrides": [
+    {
+      "files": ["**/*.(html|vue)"],
+      "customSyntax": "postcss-html",
+      "rules": {
+        "declaration-block-no-duplicate-properties": null,
+        "media-query-no-invalid": null
+      }
+    },
+    {
+      "files": ["**/*.{scss,css,sass}"],
+      "customSyntax": "postcss-scss"
+    },
+    {
+      "files": ["**/*.less"],
+      "customSyntax": "postcss-less"
+    }
+  ],
+  "rules": {
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["v-deep", ":deep", ":slotted", ":global"]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global", "deep"] }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extend",
+          "at-root",
+          "debug",
+          "warn",
+          "error",
+          "if",
+          "else",
+          "for",
+          "each",
+          "while",
+          "mixin",
+          "include",
+          "content",
+          "return",
+          "function",
+          "use",
+          "tailwind"
+        ]
+      }
+    ],
+    "order/order": [
+      "declarations",
+      "custom-properties",
+      "dollar-variables",
+      "rules"
+    ],
+    "function-url-quotes": null,
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "no-empty-source": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/at-rule-no-unknown": [true,
+      {
+        "ignoreAtRules": ["tailwind", "apply", "responsive", "screen"]
+      }
+    ]
+  }
+}
