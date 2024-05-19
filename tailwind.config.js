@@ -2,10 +2,10 @@
 export default {
   content: ['./index.html', './src/**/*.{html,js,jsx,vue,ts,tsx,md}'],
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
   corePlugins: {
-    preflight: false,
-  },
+    preflight: false
+  }
 }
