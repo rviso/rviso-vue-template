@@ -6,6 +6,7 @@
     "source.fixAll.stylelint": "explicit"
   },
   "eslint.enable": true,
+  "eslinbt.packageManager": "pnpm",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -51,17 +52,7 @@
   "git.enableSmartCommit": true,
   "GitCommitPlugin.MaxSubjectCharacters": 72,
   "liveServer.settings.port": 5501,
-  "cSpell.words": [
-    "commitlint",
-    "execa",
-    "mockjs",
-    "Pinia",
-    "rviso",
-    "stylelint",
-    "tailwindcss",
-    "unplugin",
-    "Vitest"
-  ],
+  "cSpell.words": ["commitlint", "execa", "mockjs", "Pinia", "rviso", "stylelint", "tailwindcss", "unplugin", "Vitest"],
   "vitest.commandLine": "pnpm test --",
   "vitest.enable": true
 }

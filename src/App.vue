@@ -7,7 +7,7 @@
 <style lang="scss" scoped>
 html,
 body {
-  height: 100%;
+      height: 100%;
 }
 
 #app {
