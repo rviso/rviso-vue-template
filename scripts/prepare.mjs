@@ -6,18 +6,11 @@ import { exec } from 'child_process'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const mockPath = path.resolve(
-  __dirname,
-  '../node_modules/vite-plugin-mock/node_modules/esbuild/install.js'
-)
+const mockPath = path.resolve(__dirname, '../node_modules/vite-plugin-mock/node_modules/esbuild/install.js')
 
 export const getPackageManager = () => {
   const userAgent = process.env.npm_config_user_agent ?? ''
-  const packageManager = /pnpm/.test(userAgent)
-    ? 'pnpm'
-    : /yarn/.test(userAgent)
-    ? 'yarn'
-    : 'npm'
+  const packageManager = /pnpm/.test(userAgent) ? 'pnpm' : /yarn/.test(userAgent) ? 'yarn' : 'npm'
   return packageManager
 }
 const pm = getPackageManager()
